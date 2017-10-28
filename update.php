@@ -19,7 +19,7 @@ $file = fopen("switch.json", "w");
 fwrite($file, "{\"switch\": \"off\", \"timer\": $timer, \"schd\": $schd, \"onh\": $onh, \"onm\": $onm, \"offh\": $offh, \"offm\": $offm}");
 fclose($file);
 }
-date_default_timezone_set("Asia/Kolkata");
+date_default_timezone_set("Asia/Kolkata"); //Set to local timezone
 $t=time();
 $file = fopen("lastd.json", "w");
 fwrite($file, "{\"lastupdated\": $t}");
